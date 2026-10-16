@@ -1,4 +1,4 @@
-1. Per a què serveix <form>? Recull dades de l'usuari i les envia al servidor.
+1. Per a què serveix < form >? Recull dades de l'usuari i les envia al servidor.
 2. Per a què serveix action? Indica la URL on s'envien les dades del formulari.
 3. Per a què serveix method="get"? Envia les dades a través de la URL de manera visible.
 4. Per a què serveix name? Identifica el camp de dades quan arriba al servidor.
