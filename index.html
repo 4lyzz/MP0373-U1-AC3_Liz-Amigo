@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari de registre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Formulari de registre</h1>
+        <p class="introduccio">Omple el formulari per registrar-te a l'activitat.</p>
+
+        <form action="https://m0373ac3.free.nf/processa.php" method="get" enctype="multipart/form-data">
+            
+            <fieldset>
+                <legend>Dades personals</legend>
+                
+                <div class="camp">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="camp">
+                    <label for="cognoms">Cognoms:</label>
+                    <input type="text" id="cognoms" name="cognoms" required>
+                </div>
+
+                <div class="camp">
+                    <label for="email">Correu electrònic:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="camp">
+                    <label for="contrasenya">Contrasenya:</label>
+                    <input type="password" id="contrasenya" name="contrasenya" required>
+                </div>
+
+                <div class="camp">
+                    <label for="edat">Edat:</label>
+                    <input type="number" id="edat" name="edat" min="14" max="100">
+                </div>
+
+                <div class="camp">
+                    <label for="data_naixement">Data de naixement:</label>
+                    <input type="date" id="data_naixement" name="data_naixement">
+                </div>
+
+                <div class="camp">
+                    <label for="telefon">Telèfon:</label>
+                    <input type="tel" id="telefon" name="telefon">
+                </div>
+
+                <div class="camp">
+                    <label for="web">Pàgina web:</label>
+                    <input type="url" id="web" name="web" placeholder="https://exemple.com">
+                </div>
+
+                <div class="camp">
+                    <label for="hora_contacte">Hora preferida de contacte:</label>
+                    <input type="time" id="hora_contacte" name="hora_contacte">
+                </div>
+
+                <div class="camp">
+                    <label for="mes_disponibilitat">Mes de disponibilitat:</label>
+                    <input type="month" id="mes_disponibilitat" name="mes_disponibilitat">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferències</legend>
+
+                <div class="camp">
+                    <label for="color">Color preferit:</label>
+                    <input type="color" id="color" name="color" value="#0d6efd">
+                </div>
+
+                <div class="camp">
+                    <label for="puntuacio">Quant t'agrada programar?</label>
+                    <input type="range"
