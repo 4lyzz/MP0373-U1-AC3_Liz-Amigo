@@ -78,4 +78,82 @@
 
                 <div class="camp">
                     <label for="puntuacio">Quant t'agrada programar?</label>
-                    <input type="range"
+                    <input type="range" id="puntuacio" name="puntuacio" min="0" max="10" value="5">
+                </div>
+
+                <div class="camp">
+                    <label>Gènere:</label>
+                    <label><input type="radio" name="genere" value="home"> Home</label>
+                    <label><input type="radio" name="genere" value="dona"> Dona</label>
+                    <label><input type="radio" name="genere" value="altre"> Altre</label>
+                </div>
+
+                <div class="camp">
+                    <label>Aficions:</label>
+                    <label><input type="checkbox" name="aficions[]" value="programacio"> Programació</label>
+                    <label><input type="checkbox" name="aficions[]" value="videojocs"> Videojocs</label>
+                    <label><input type="checkbox" name="aficions[]" value="esport"> Esport</label>
+                    <label><input type="checkbox" name="aficions[]" value="musica"> Música</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Localització</legend>
+
+                <div class="camp">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="espanya">Espanya</option>
+                        <option value="franca">França</option>
+                        <option value="italia">Itàlia</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="alemanya">Alemanya</option>
+                        <option value="regne_unit">Regne Unit</option>
+                    </select>
+                </div>
+
+                <div class="camp">
+                    <label for="municipi">Municipi:</label>
+                    <input type="text" id="municipi" name="municipi" list="llista_municipis">
+                    <datalist id="llista_municipis">
+                        <option value="Barcelona">
+                        <option value="Girona">
+                        <option value="Lleida">
+                        <option value="Tarragona">
+                        <option value="Badalona">
+                        <option value="Sabadell">
+                        <option value="Terrassa">
+                        <option value="Mataró">
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informació addicional</legend>
+
+                <div class="camp">
+                    <label for="comentaris">Comentaris:</label>
+                    <textarea id="comentaris" name="comentaris" placeholder="Escriu els teus comentaris aquí..."></textarea>
+                </div>
+
+                <div class="camp">
+                    <label for="fitxer">Fitxer:</label>
+                    <input type="file" id="fitxer" name="fitxer">
+                </div>
+
+                <div class="camp">
+                    <label>
+                        <input type="checkbox" name="condicions" required> Accepto les condicions de la inscripció.
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="camp-boto">
+                <button type="submit">Enviar</button>
+                <button type="reset">Netejar</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
